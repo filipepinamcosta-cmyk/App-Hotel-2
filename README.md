@@ -1,1 +1,1 @@
-Platforms are not included in this template. Open the project in Visual Studio to generate platform-specific folders when you build.
+Aplicativo Hotel - Com Mudanças
