@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sys="clr-namespace:System;assembly=mscorlib"
+             x:Class="AppHotelPlus.Views.CadastroPage"
+             Title="Cadastrar Hóspede">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="18">
+            <Label Text="Cadastrar Hóspede" FontSize="22" FontAttributes="Bold" HorizontalOptions="Center" TextColor="{StaticResource Primary}"/>
+
+            <Entry x:Name="txtNome" Placeholder="Nome completo" />
+            <Entry x:Name="txtIdade" Placeholder="Idade (número)" Keyboard="Numeric" />
+
+            <Label Text="Data de Check-in:" />
+            <DatePicker x:Name="dpCheckin" MinimumDate="{x:Static sys:DateTime.Today}" />
+
+            <Button Text="Salvar" Clicked="BtnSalvar_Clicked" BackgroundColor="{StaticResource Primary}" TextColor="White" CornerRadius="12" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

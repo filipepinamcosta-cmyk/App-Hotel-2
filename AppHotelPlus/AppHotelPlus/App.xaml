@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://schemas.microsoft.com/dotnet/2021/maui" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="AppHotelPlus.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <Color x:Key="Primary">#007ACC</Color>
+            <Color x:Key="Secondary">#00A1E0</Color>
+            <Color x:Key="BackgroundLight">#F2F8FC</Color>
+            <Style TargetType="Label">
+                <Setter Property="TextColor" Value="#333" />
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

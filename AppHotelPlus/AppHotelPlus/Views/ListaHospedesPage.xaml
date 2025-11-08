@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppHotelPlus.Views.ListaHospedesPage"
+             Title="Lista de Hóspedes">
+
+    <VerticalStackLayout Padding="20" Spacing="12">
+        <Label Text="Hóspedes Cadastrados" FontSize="20" FontAttributes="Bold" HorizontalOptions="Center" TextColor="{StaticResource Primary}" />
+
+        <CollectionView x:Name="cvHospedes">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Frame CornerRadius="12" Padding="12" Margin="6" BackgroundColor="White" HasShadow="True">
+                        <VerticalStackLayout>
+                            <Label Text="{Binding Nome}" FontAttributes="Bold" />
+                            <Label Text="{Binding Idade, StringFormat='Idade: {0} anos'}" />
+                            <Label Text="{Binding DataCheckin, StringFormat='Check-in: {0:dd/MM/yyyy}'}" />
+                        </VerticalStackLayout>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </VerticalStackLayout>
+</ContentPage>
